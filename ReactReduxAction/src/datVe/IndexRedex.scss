@@ -1,0 +1,193 @@
+/* Định dạng tổng thể */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #f8f9fa;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+/* Khu vực nhập thông tin */
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Ghế ngồi */
+.seat {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.seat--reserved {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.seat--selected {
+  background-color: green;
+}
+
+.seat--empty {
+  background-color: gray;
+}
+
+/* Hàng ghế */
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.row-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Vùng chọn ghế */
+.seat-selection {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.legend-box--selected {
+  background-color: green;
+}
+
+.legend-box--reserved {
+  background-color: red;
+}
+
+.legend-box--empty {
+  background-color: gray;
+}
+
+/* Thanh thông báo và màn hình */
+.screen {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.confirm-button {
+  background-color: white;
+  color:  black;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #ff9900;
+}
+
+/* Thông tin đặt vé */
+.booking-details {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.booking-details h3 {
+  color: #ff6600;
+}
+
+.booking-details p {
+  color: white;
+}
+.start-button{
+  border: 1px solid black;
+  background-color: whitesmoke;
+  padding: 10px 20px ;
+  border-radius: 30px;
+  color: black;
+}
+.btn-Action{
+  padding : 10px;
+  padding-left: 20px;
+}
+/* Dãy số ghế */
+.seat-numbers {
+  display: grid;
+  grid-template-columns: repeat(12, 45px); /* 12 cột, mỗi cột rộng 40px */
+  gap: 5px; /* Khoảng cách giữa các số */
+  justify-content: center; /* Căn giữa dãy số */
+  margin-bottom: 10px;
+}
+
+.seat-number {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 40px; /* Chiều cao dòng bằng với chiều cao nút ghế */
+}
